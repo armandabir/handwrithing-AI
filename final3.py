@@ -127,7 +127,7 @@ class main(object):
             self.df['target']=self.targets_array
             # self.df.to_csv("mydf.csv",index=False)
             print(self.df)
-            result=pd.concat([self.data,self.df],axis=1)
+            result=pd.concat([self.data,self.df],axis=0)
             # print(result)
             result.to_csv("mydf.csv",index=False)
             
